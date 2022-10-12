@@ -27,4 +27,4 @@ jobs:
       run: mvn -Pjar clean package
       
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag IWA-Java:latest
+      run: docker build . --file Dockerfile --tag iwa-java:latest
