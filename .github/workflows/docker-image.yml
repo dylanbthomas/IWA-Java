@@ -33,7 +33,7 @@ jobs:
         password: ${{ secrets.DOCKER_PASSWORD }}
 
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag iwa-java:latest
+      run: docker build . --file Dockerfile --tag dylanbthomas/iwa-java:latest
     
     - name: Push Docker image
-      run: docker push --all-tags dylanbthomas/iwa-java:latest
+      run: docker push --all-tags dylanbthomas/iwa-java
